@@ -1,39 +1,77 @@
-# Trading_Platform
+**#Trading Platform**
+**1. Overview**
 
-## Project Overview
+The Trading Platform is a full-stack web application designed to allow users to explore, analyze, and interact with trending market data. The system combines a Spring Boot–based backend with a React-powered frontend, demonstrating real-world integration of RESTful services with a modern, responsive user interface.
 
-The Treading Platform is a web application that enables users to view, analyze, and interact with trending data. Designed with a robust backend powered by Java Spring Boot and a dynamic frontend created using React, this project highlights the integration of a RESTful API with a modern, responsive user interface.
+The application emphasizes scalability, security, and clean architecture. Core functionalities include trend visualization, secure user authentication, and reliable data persistence. Spring Boot manages business logic and secure data handling, while React ensures a smooth and interactive user experience on the client side.
 
-The platform includes key features like trend visualization, user authentication, and data persistence, providing a seamless and secure experience for users. The backend leverages Spring Boot’s capabilities to handle complex business logic and ensure secure data transactions, while the React frontend focuses on delivering a smooth and engaging user experience.
+# Project Architecture
+**2. Backend (Spring Boot)**
 
-## Project Structure
+The backend layer is responsible for business logic, API handling, and secure data processing.
 
-### Backend (Backend-Spring boot)
+**Key Features**
 
-- RESTful API to handle data requests and responses.
-- Uses Spring Security for managing authentication and authorization.
-- Database: PostgreSQL with JPA and Hibernate ORM for seamless data management.
-- Configurations handled in application.properties.
+RESTful APIs for client–server communication
 
-The backend is built with **Java Spring Boot** and is responsible for handling business logic, managing user data, and ensuring secure transactions. 
-- **Key files include:**
-- **`Backend/src/main/java/com/example/demo`**: Contains the core backend files, including controllers, services, and models.
-- **`Backend/src/main/resources/application.properties`**: Configuration file for setting up database connections, server properties, etc.
+Authentication and authorization using Spring Security
 
-### Frontend (Frontend-React)
+Data persistence with PostgreSQL, JPA, and Hibernate
 
-- Uses functional components for improved performance and modularity.
-- Axios is used to make HTTP requests to the backend API.
-- Styled with CSS and Bootstrap for a visually appealing, user-friendly interface.
+Centralized configuration via application.properties
 
-The frontend is developed using **React** for a responsive and interactive user experience. 
-- **Key files include:**
-- **`Frontend/src/App.js`**: Main component that acts as the entry point for rendering the application's user interface.
-- **`Frontend/src/index.js`**: Renders the app and integrates with the React DOM.
+**Core Responsibilities**
 
-## Setup
+User management and authentication
 
-### Prerequisites
-- **Java 11** or newer
-- **Node.js and npm**
-- **MySQL Database** (or another compatible database)
+Secure transaction handling
+
+Processing and serving trending data
+
+**Important Paths**
+
+Backend/src/main/java/com/example/demo
+→ Controllers, services, entities, and repositories
+
+Backend/src/main/resources/application.properties
+→ Database, server, and application configurations
+
+**3. Frontend (React)**
+
+The frontend delivers a responsive and interactive interface for end users.
+
+**Key Features**
+
+Built with React functional components
+
+API communication using Axios
+
+Styled using CSS and Bootstrap
+
+Responsive design for better usability across devices
+
+**Important Files**
+
+Frontend/src/App.js
+→ Main component controlling application layout
+
+Frontend/src/index.js
+→ Application entry point and DOM rendering
+
+  ** Technology Stack**
+Layer	Technologies Used
+Backend	Java, Spring Boot, Spring Security, JPA, Hibernate
+Frontend	React, Axios, CSS, Bootstrap
+Database	PostgreSQL
+API Style	RESTful APIs
+
+**#Setup & Installation
+3. Prerequisites**
+
+Ensure the following are installed on your system:
+
+Java 11 or higher
+
+Node.js & npm
+
+SQL database
