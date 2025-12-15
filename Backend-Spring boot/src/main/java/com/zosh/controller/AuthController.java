@@ -58,8 +58,8 @@ public class AuthController {
 	@Autowired
 	private EmailService emailService;
 
-	
 
+	@CrossOrigin(origins = "http://localhost:4173")
 	@PostMapping("/signup")
 	public ResponseEntity<AuthResponse> createUserHandler(
 			@RequestBody User user) throws UserException {
