@@ -1,4 +1,4 @@
-**#Trading Platform**
+#Trading Platform
 **1. Overview**
 
 The Trading Platform is a full-stack web application designed to allow users to explore, analyze, and interact with trending market data. The system combines a Spring Boot–based backend with a React-powered frontend, demonstrating real-world integration of RESTful services with a modern, responsive user interface.
